@@ -32,7 +32,7 @@ const routes = [
     { 
       path: '/:pathMatch(.*)*', 
       // component: () => import(/* webpackChunkName: "NoPageFound" */'@/modules/shared/pages/NoPageFound')
-      redirect: '/',
+      redirect: '/home',
     },
 
 ]
