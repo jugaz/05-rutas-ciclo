@@ -13,7 +13,7 @@ const routes = [
     },
 
     { 
-      path: '/id',
+      path: '/:id',
       component: () => import(/* webpackChunkName: "BrawlPage" */'@/modules/brawlstart/pages/BrawlPage') 
     },
 
