@@ -1,25 +1,38 @@
 import { createRouter , createWebHashHistory} from 'vue-router'
 
 const routes = [
-
-    { 
+    {
       path: '/', 
-      component: () => import(/* webpackChunkName: "ListPage" */'@/modules/brawlstart/pages/ListPage') 
+      redirect: '/home',
+
+
+    },
+    { 
+      path: '/home', 
+      name:'home',
+      component: () => import(/* webpackChunkName: "ListPage" */'@/modules/brawlstart/pages/ListPage'),
+ 
     },
 
     { 
       path: '/about', 
+      name:'about',
       component: () => import(/* webpackChunkName: "AboutPage" */'@/modules/brawlstart/pages/AboutPage') 
     },
 
     { 
-      path: '/:id',
-      component: () => import(/* webpackChunkName: "BrawlPage" */'@/modules/brawlstart/pages/BrawlPage') 
+      path: '/brawl-starts-id/:id',
+      name:'brawl-starts-id',
+      component: () => import(/* webpackChunkName: "BrawlPage" */'@/modules/brawlstart/pages/BrawlPage') ,
+      props: (route) => {
+        const id = Number( route.params.id )
+        return  isNaN( id ) ? { id: 1 } : { id }
+        }
     },
-
     { 
       path: '/:pathMatch(.*)*', 
-      component: () => import(/* webpackChunkName: "NoPageFound" */'@/modules/shared/pages/NoPageFound') 
+      // component: () => import(/* webpackChunkName: "NoPageFound" */'@/modules/shared/pages/NoPageFound')
+      redirect: '/',
     },
 
 ]

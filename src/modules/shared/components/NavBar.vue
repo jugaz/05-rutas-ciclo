@@ -1,9 +1,9 @@
 <template>
     
     <div>
-        <router-link to="/">Home</router-link>
-        <router-link to="/id">Brawl</router-link>
-        <router-link to="/about">About</router-link>
+        <router-link :to="{ name:'home'}">Home</router-link>
+        <router-link :to="{ name:'brawl-starts-id', params: { id: 10 } }">Brawl</router-link>
+        <router-link :to="{ name:'about'}">About</router-link>
 
     </div>
 
