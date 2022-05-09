@@ -2,7 +2,7 @@
     
     <div>
         <!-- <router-link :to="{ name:'home'}">Home</router-link>
-        <router-link :to="{ name:'brawl-starts-id', params: { id: 10 } }">Brawl</router-link>
+        <router-link :to="{ name:'friends-id', params: { id: 10 } }">Friends</router-link>
         <router-link :to="{ name:'about'}">About</router-link> -->
         <CustomLink 
             v-for="link in links" :key="link.to"
@@ -17,9 +17,13 @@ export default {
     data() {
         return {
             links: [
-                { to: '/', name: 'BrawlStart'},
-                { to: '/10', name: 'Por ID'},
-                { to: '/about', name: 'About'},
+                { to: 'friends-home', name: 'Friends'},
+                { to: 'friends-id', name: 'Por ID', id:1},
+                { to: 'friends-about', name: 'About'},
+
+                { to: 'big-bang-theory-characters', name: 'Personajes'},
+                { to: 'big-bang-theory-about', name: 'Big Bang Theory - About'},
+
                 { to: 'https://google.com', name: 'Google'}
                 
             ]

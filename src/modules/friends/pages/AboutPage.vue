@@ -1,5 +1,5 @@
 <template>
-    <h1>AboutPage</h1>
+    <h1>Friends - AboutPage</h1>
     <hr>
     <h2>{{ name }}</h2>
     <button @click="onChangeName">

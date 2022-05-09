@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkrutas_ciclo"]=self["webpackChunkrutas_ciclo"]||[]).push([[384],{4963:function(n,r,u){u.r(r),u.d(r,{default:function(){return i}});var e=u(3396);function c(n,r,u,c,t,s){return(0,e.wg)(),(0,e.iD)("h3",null,"Personajes ")}var t={},s=u(89);const a=(0,s.Z)(t,[["render",c]]);var i=a}}]);
+//# sourceMappingURL=CharactersPage.fcbf3f96.js.map

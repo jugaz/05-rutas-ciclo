@@ -1,7 +1,7 @@
 <template>
-    <h1> Brawl:  <span> #{{ id }}</span></h1>
-    <div v-if="brawl">
-        <img :src="brawl.url" :alt="brawl.name">
+    <h1> Friends:  <span> #{{ id }}</span></h1>
+    <div v-if="friends">
+        <img :src="friends.url" :alt="friends.name">
     </div>
 </template>
 <script>
@@ -15,7 +15,7 @@ export default {
     data() {
         return {
             // id: null
-            brawl: null
+            friends: null
         }
     },
 
@@ -25,15 +25,15 @@ export default {
 
         // const { id } =  this.$route.params
         //this.id = id
-        this.getBrawl()
+        this.getFriends()
     },
     methods: {
-        async getBrawl() {
+        async getFriends() {
             try {
-                const brawl = await fetch(`https://jugaz.github.io/brawl-start-api/json/${ this.id }.json`)
+                const friends = await fetch(`https://jugaz.github.io/series-tv-api/json/friends/${ this.id }.json`)
                 .then( r => r.json())
-                console.log('brawl',brawl)
-                this.brawl = brawl
+                console.log('friends',friends)
+                this.friends = friends
             }
             catch (error) {
                 this.$router.push("/home") 
@@ -48,7 +48,7 @@ export default {
     },
     watch: {
         id() {
-            this.getBrawl()
+            this.getFriends()
         }
     }
 

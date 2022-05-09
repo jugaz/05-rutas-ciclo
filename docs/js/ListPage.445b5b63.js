@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkrutas_ciclo"]=self["webpackChunkrutas_ciclo"]||[]).push([[822],{6472:function(n,r,u){u.r(r),u.d(r,{default:function(){return i}});var t=u(3396);function c(n,r){return(0,t.wg)(),(0,t.iD)("h1",null,"ListPage")}var e=u(89);const a={},s=(0,e.Z)(a,[["render",c]]);var i=s}}]);
-//# sourceMappingURL=ListPage.445b5b63.js.map
