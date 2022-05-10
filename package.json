@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jugaz/rutas-ciclo.git"
+    "url": "git+https://github.com/jugaz/05-rutas-ciclo.git"
   },
   "author": "Jesús Ugaz Vegas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jugaz/rutas-ciclo/issues"
+    "url": "https://github.com/jugaz/05-rutas-ciclo/issues"
   },
-  "homepage": "https://github.com/jugaz/rutas-ciclo#readme"
+  "homepage": "https://github.com/jugaz/05-rutas-ciclo#readme"
 }
