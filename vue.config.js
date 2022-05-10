@@ -3,5 +3,5 @@ module.exports = defineConfig({
   transpileDependencies: true,
   outputDir: 'docs',
   assetsDir: '',
-  publicPath: '/rutas-ciclo/'
+  publicPath: '/05-rutas-ciclo/'
 })
